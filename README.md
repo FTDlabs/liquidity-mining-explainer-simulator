@@ -41,7 +41,11 @@ npm run build
 - `lib/simulator.test.mjs`：数值基准与账户行为测试。
 - `.openai/hosting.json`：已有 Sites 项目的部署关联，不含凭据。
 
-使用 React、TypeScript、Vinext、Vite、Tailwind CSS 与 shadcn 组件。构建输出兼容 Cloudflare Workers；GitHub 仓库用于保存项目源码，不会自动启用 GitHub Pages 或修改既有网站的访问范围。
+使用 React、TypeScript、Vinext、Vite、Tailwind CSS 与 shadcn 组件。原有构建输出兼容 Cloudflare Workers。
+
+## Vercel 部署
+
+将仓库导入 Vercel 即可使用 `vercel.json` 中的配置部署。Vercel 执行 `npm run build:vercel`，将 `dist-vercel` 作为静态网站发布；无需数据库、钱包或环境变量。原有 Sites 构建与部署配置保持可用。
 
 ## 计算口径
 
